@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from '../IMAGES/hero.jpg';
 import img2 from '../IMAGES/ToyotaLogo.png';
+import '../index.css'
 
 const Hero = () => {
     return(

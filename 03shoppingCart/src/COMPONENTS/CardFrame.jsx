@@ -1,17 +1,16 @@
 import React from 'react';
-import Data from '../COMPONENTS/Data'
 import Card from '../COMPONENTS/Card'
 import img from '../IMAGES/background.jpg'
 
-const  CardFrame = ({addToCart}) => {
+const  CardFrame = ({data , addToCart}) => {
     return(
-        <div className='hero px-[10vw] pt-[15vh] pb-[5vh] bg-fixed'
+        <div className='hero px-[10vw] pt-[15vh] pb-[5vh]'
             // style={{backgroundImage: `url(${img})`}}
         >
-            <h1 className='text-center text-[4vw] font-bold mb-[5vh]'>Welcome Back</h1>
-            <div className='flex justify-between flex-wrap gap-y-[5vh]'>
+            <h1 className='text-center sm:text-[4vw] font-bold mb-[5vh] text-[10vw]'>Welcome Back</h1>
+            <div className='flex sm:flex-row sm:justify-between flex-wrap gap-y-[5vh] flex-col items-center'>
             {
-                Data.map( (product)=> {
+                data.map( (product)=> {
                     return (
                         <Card key={product.id} product={product} addToCart={addToCart}/>
                     )

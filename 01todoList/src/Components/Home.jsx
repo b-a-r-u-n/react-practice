@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 const Home = ({addTask}) => {
-  const [name , SetName] = useState();
+  const [name , SetName] = useState("");
     return(
     <>
       <div className='flex items-center justify-center'>
